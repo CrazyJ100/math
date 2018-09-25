@@ -20,4 +20,16 @@ class My_test < Minitest::Test
 		results=add(arg1,arg2)
 		assert_equal(10,results)
 	end
+	def test_for_subtract
+		arg1 = 8
+		arg2 = 3
+		result=subtract(arg1,arg2)
+		assert_equal(5,result)
+	end
+	def test_for_division
+		arg1 = 25
+		arg2 = 5
+		result=divide(arg1,arg2)
+		assert_equal(5,result)
+	end
 end
